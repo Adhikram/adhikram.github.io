@@ -1,9 +1,30 @@
 [
   {
+    "company": "Anax Real Estate",
+    "company_location": "Remote, New York, USA",
+    "role": "Founding Engineer",
+    "time_duration": "April 2025 - Present",
+    "stack": "Stack:- Python, Docker, Next.js, PostgreSQL",
+    "details": [
+      {
+        "title": "Build Up the Product",
+        "descriptions": [
+          "Reorganized the reachout funnel that lead the engagement rates to 10x through niched AI powered outreach with filterd Deals.",
+          "Backtested the AI pipelines to use the best models and prompt engineering to get the best results in lower cost started from openai moved to gemini and finalized the groq models.",
+          "Added Agentic Support in the entire reachout funnel to make it more efficient and less human intervention over the lifecycle of the product.",
+          "Redesined the context engineering approach to the data enrichment pipeline to make it more qualitative to use down funneling the leads to reachout.",
+          "Created a Article Enrichment Pipeline which reduced the cost of third party data aquisition and added auto ingestion to the new leads, deals in the product from Real World Data."
+        ],
+        "languages": "Stack:- Python, Docker, Next.js, PostgreSQL, Agentic AI",
+        "scale": "Enabling the Real Estate Industry to be more efficient With AI Powered Lead Generation and Reachout"
+      }
+    ]
+  },
+  {
     "company": "MEDIA.NET (Directi)",
     "company_location": "Remote, India",
     "role": "Data Application Developer 2",
-    "time_duration": "October 2021 - Present",
+    "time_duration": "October 2021 - April 2025",
     "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
     "details": [
       {

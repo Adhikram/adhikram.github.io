@@ -3,4 +3,5 @@
 source "https://rubygems.org"
 
 # gem "rails"
-gem "jekyll"
+gem "jekyll", "~> 3.9"
+gem "sassc", "~> 2.0"

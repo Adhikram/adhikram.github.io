@@ -3,10 +3,14 @@
         "title": "Equal Collective(In Progress)",
         "time_period": "January 2024 - Present",
         "descriptions": [
+            "Lead the Product fromt the pre-release to 20K+ monthly revenue.",
+            "Lead the Product from Scrach to a point where it is being sustainable by it's own, generating leads and revenue.",
             "Developed a lead management platform for the sales team, enabling efficient tracking of large datasets.",
-            "Built a backend system that automates human-like analysis of leads, providing actionable insights to the sales team."
+            "Built a backend system that automates human-like analysis of leads, providing actionable insights to the sales team.",
+            "Upgraded the Product analysing system performance by 80% by redoing the Data Model and the Analysis Pipeline.",
+            "Hosted Custom Generic Models to cater the needs of the product which saves us from cost of generic models."
         ],
-        "languages": "AWS, Node.js, Postgres, Azure, Metabase",
+        "languages": "AWS, Node.js, Postgres, Azure, Metabase, Data Pipeline, Data Modeling",
         "site": "https://www.linkedin.com/company/equal-collective/"
     },
     {

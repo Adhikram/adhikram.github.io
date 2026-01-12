@@ -39,3 +39,4 @@ _site
 *.tdo
 
 Gemfile.lock
+/vendor

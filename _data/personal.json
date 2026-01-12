@@ -8,23 +8,27 @@
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Resume.pdf",
         "skills":[
-                    {
-                        "title": "Languages",
-                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-                    },
-                    {
-                        "title": "Tools",
-                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
-                    },
-                    {
-                        "title": "Fundamentals",
-                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
-                    },
-                    {
-                        "title": "Data Stack",
-                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
-                    }
-                ]
+            {
+                "title": "Languages",
+                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+            },
+            {
+                "title": "Tools",
+                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+            },
+            {
+                "title": "Fundamentals",
+                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+            },
+            {
+                "title": "Data Stack",
+                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+            },
+            {
+                "title": "AI Stack",
+                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+            }
+        ]
     },
     {
         "name": "Adhikram Maitra",
@@ -35,23 +39,27 @@
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Jobs_Resume.pdf",
         "skills":[
-                    {
-                        "title": "Languages",
-                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-                    },
-                    {
-                        "title": "Tools",
-                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
-                    },
-                    {
-                        "title": "Fundamentals",
-                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
-                    },
-                    {
-                        "title": "Data Stack",
-                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
-                    }
-                ]
+            {
+                "title": "Languages",
+                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+            },
+            {
+                "title": "Tools",
+                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+            },
+            {
+                "title": "Fundamentals",
+                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+            },
+            {
+                "title": "Data Stack",
+                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+            },
+            {
+                "title": "AI Stack",
+                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+            }
+        ]
     },{
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/refs",
@@ -61,23 +69,27 @@
         "github":"https://github.com/Adhikram",
         "resume":"Adhikram_Maitra_Referrals_Resume.pdf",
         "skills":[
-                    {
-                        "title": "Languages",
-                        "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
-                    },
-                    {
-                        "title": "Tools",
-                        "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
-                    },
-                    {
-                        "title": "Fundamentals",
-                        "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
-                    },
-                    {
-                        "title": "Data Stack",
-                        "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
-                    }
-                ]
+            {
+                "title": "Languages",
+                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+            },
+            {
+                "title": "Tools",
+                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+            },
+            {
+                "title": "Fundamentals",
+                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+            },
+            {
+                "title": "Data Stack",
+                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+            },
+            {
+                "title": "AI Stack",
+                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+            }
+        ]
     },{
         "name": "Adhikram Maitra",
         "website": "https://portfolio.wolfcreek.dev/masked",
@@ -89,11 +101,11 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
             },
             {
                 "title": "Tools",
-                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS"
+                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
             },
             {
                 "title": "Fundamentals",
@@ -102,6 +114,10 @@
             {
                 "title": "Data Stack",
                 "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+            },
+            {
+                "title": "AI Stack",
+                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
             }
         ]
     }
