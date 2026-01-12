@@ -102,35 +102,59 @@ title: Adhikram Maitra
       </div>
       <div class="content">
         <span class="heading">
-          <h3>Projects</h3>
+          <h3>Products</h3>
         </span>
-        {% for project in site.data.proj %}
+        {% for product in site.data.proj %}
         <div class="level is-marginless">
-          <p class="heading is-marginless">
-            {{ project.title }}<span style="
-                  margin-left: 5px;
-                  font-size: 10px;
+          <p class="is-marginless">
+            <strong>{{ product.company }}</strong>
+            {% if product.site %}
+            <a href="{{ product.site }}" target="_blank" rel="noopener noreferrer" style="color: #4169e1; margin-left: 5px;">
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+            {% if product.repository %}
+            <a href="{{ product.repository }}" target="_blank" rel="noopener noreferrer" style="color: #4169e1; margin-left: 5px;">
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+            {% endif %}
+            <br />
+            <span class="content is-marginless" style="
+                  font-size: 0.8rem;
                   font-family: monospace;
                   color: #4169e1;
-                ">{{ project.languages }}</span>
+                ">{{ product.role }}</span>
           </p>
           <p style="text-align: right; font-size: 0.8rem">
-            {{ project.time_period }}
+            <span class="content is-marginless">{{ product.time_duration }}</span>
           </p>
         </div>
-        {% if project.repository %}
-        <p style="font-size: 0.8rem">
-          <a href="{{ project.repository }}" target="_blank" rel="noopener noreferrer"
-            style="color: #4169e1">Repository</a>
-        </p>
-        {% endif %} {% if project.site %}
-        <p style="font-size: 0.8rem">
-          <a href="{{ project.site }}" target="_blank" rel="noopener noreferrer" style="color: #4169e1">View Site</a>
-        </p>
-        {% endif %}
-        <ul style="margin-top: 0.2em; list-style-type: disc">
-          {% for description in project.descriptions %}
-          <li style="font-size: 0.8rem">{{ description }}</li>
+        <ul style="margin-top: 0.2em; list-style-type: circle">
+          {% for detail in product.details %}
+          <li class="content is-marginless" style="font-size: 0.8rem">
+            <span class="heading is-marginless">
+              {{ detail.title }}
+              <span style="
+                    margin-left: 5px;
+                    font-size: 10px;
+                    font-family: monospace;
+                    color: #4169e1;
+                  ">{{ detail.languages }}
+                {% if detail.scale %}
+                || Scale: {{ detail.scale }}
+                {% endif %}
+              </span>
+            </span>
+            {% if detail.descriptions %}
+            <ul style="margin-top: 0.2em; list-style-type: disc">
+              {% for description in detail.descriptions %}
+              <li class="content is-marginless" style="font-size: 0.8rem">
+                {{ description }}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </li>
           {% endfor %}
         </ul>
         {% endfor %}

@@ -10,23 +10,31 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
             },
             {
-                "title": "Tools",
-                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+                "title": "Backend \\& Frameworks",
+                "details": "Node.js, Ruby on Rails, Next.js, Express, REST APIs, Microservices"
             },
             {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                "title": "Cloud \\& DevOps",
+                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
-                "title": "Data Stack",
-                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                "title": "Databases \\& Data Engineering",
+                "details": "PostgreSQL, MySQL, Spark, Kafka, Structured Streaming, HDFS, Hive, PySpark, ETL, Data Modeling"
             },
             {
-                "title": "AI Stack",
-                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+                "title": "AI \\& Machine Learning",
+                "details": "Agentic AI, Multi-LLM Integration, LLM Fine-Tuning, Prompt Engineering, Vector Databases, RAG"
+            },
+            {
+                "title": "Analytics \\& Monitoring",
+                "details": "Metabase, Data Pipelines, A/B Testing, Performance Monitoring, Real-time Analytics"
+            },
+            {
+                "title": "Software Engineering",
+                "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
             }
         ]
     },
@@ -41,23 +49,31 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
             },
             {
-                "title": "Tools",
-                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+                "title": "Backend \\& Frameworks",
+                "details": "Node.js, Ruby on Rails, Next.js, Express, REST APIs, Microservices"
             },
             {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                "title": "Cloud \\& DevOps",
+                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
-                "title": "Data Stack",
-                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                "title": "Databases \\& Data Engineering",
+                "details": "PostgreSQL, MySQL, Spark, Kafka, Structured Streaming, HDFS, Hive, PySpark, ETL, Data Modeling"
             },
             {
-                "title": "AI Stack",
-                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+                "title": "AI \\& Machine Learning",
+                "details": "Agentic AI, Multi-LLM Integration, LLM Fine-Tuning, Prompt Engineering, Vector Databases, RAG"
+            },
+            {
+                "title": "Analytics \\& Monitoring",
+                "details": "Metabase, Data Pipelines, A/B Testing, Performance Monitoring, Real-time Analytics"
+            },
+            {
+                "title": "Software Engineering",
+                "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
             }
         ]
     },{
@@ -71,23 +87,31 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
             },
             {
-                "title": "Tools",
-                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+                "title": "Backend \\& Frameworks",
+                "details": "Node.js, Ruby on Rails, Next.js, Express, REST APIs, Microservices"
             },
             {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                "title": "Cloud \\& DevOps",
+                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
-                "title": "Data Stack",
-                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                "title": "Databases \\& Data Engineering",
+                "details": "PostgreSQL, MySQL, Spark, Kafka, Structured Streaming, HDFS, Hive, PySpark, ETL, Data Modeling"
             },
             {
-                "title": "AI Stack",
-                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+                "title": "AI \\& Machine Learning",
+                "details": "Agentic AI, Multi-LLM Integration, LLM Fine-Tuning, Prompt Engineering, Vector Databases, RAG"
+            },
+            {
+                "title": "Analytics \\& Monitoring",
+                "details": "Metabase, Data Pipelines, A/B Testing, Performance Monitoring, Real-time Analytics"
+            },
+            {
+                "title": "Software Engineering",
+                "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
             }
         ]
     },{
@@ -101,23 +125,31 @@
         "skills":[
             {
                 "title": "Languages",
-                "details": "JavaScript, Scala, Java, Python, SQL (MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
             },
             {
-                "title": "Tools",
-                "details": "Jenkins, Git, Oozie, EC2, Ngnix, Redis, AWS, Docker"
+                "title": "Backend \\& Frameworks",
+                "details": "Node.js, Ruby on Rails, Next.js, Express, REST APIs, Microservices"
             },
             {
-                "title": "Fundamentals",
-                "details": "Design Patterns, Object-Oriented Programming, Distributed Systems, ETL, Data Modeling"
+                "title": "Cloud \\& DevOps",
+                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
-                "title": "Data Stack",
-                "details": "Spark, Structured Streaming, Kafka, EMR, HDFS, Hive, PySpark"
+                "title": "Databases \\& Data Engineering",
+                "details": "PostgreSQL, MySQL, Spark, Kafka, Structured Streaming, HDFS, Hive, PySpark, ETL, Data Modeling"
             },
             {
-                "title": "AI Stack",
-                "details": "Agentic AI, Multi LLM Integration, LLM Fine-Tuning, LLM Evaluation, Prompt Engineering, Vector Databases, RAG"
+                "title": "AI \\& Machine Learning",
+                "details": "Agentic AI, Multi-LLM Integration, LLM Fine-Tuning, Prompt Engineering, Vector Databases, RAG"
+            },
+            {
+                "title": "Analytics \\& Monitoring",
+                "details": "Metabase, Data Pipelines, A/B Testing, Performance Monitoring, Real-time Analytics"
+            },
+            {
+                "title": "Software Engineering",
+                "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
             }
         ]
     }

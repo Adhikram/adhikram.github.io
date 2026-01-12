@@ -1,26 +1,61 @@
 [
     {
-        "title": "Equal Collective(In Progress)",
-        "time_period": "January 2024 - Present",
-        "descriptions": [
-            "Lead the Product fromt the pre-release to 20K+ monthly revenue.",
-            "Lead the Product from Scrach to a point where it is being sustainable by it's own, generating leads and revenue.",
-            "Developed a lead management platform for the sales team, enabling efficient tracking of large datasets.",
-            "Built a backend system that automates human-like analysis of leads, providing actionable insights to the sales team.",
-            "Upgraded the Product analysing system performance by 80% by redoing the Data Model and the Analysis Pipeline.",
-            "Hosted Custom Generic Models to cater the needs of the product which saves us from cost of generic models."
-        ],
-        "languages": "AWS, Node.js, Postgres, Azure, Metabase, Data Pipeline, Data Modeling",
-        "site": "https://www.linkedin.com/company/equal-collective/"
+        "company": "Tech Prufer",
+        "company_location": "",
+        "role": "Founder",
+        "time_duration": "January 2026 - Present",
+        "site": "https://techprufer.com/",
+        "details": [
+            {
+                "title": "Job Portal Platform",
+                "descriptions": [
+                    "Building a Job Portal Platform for the Tech Industry to connect the candidates with the best opportunities.",
+                    "Developed the Backend from scratch on baremetal, supported by a PostgreSQL database for scalable data management."
+                ],
+                "languages": "Stack:- Python, Next.js, PostgreSQL, Agentic AI",
+                "scale": "Tech Job Portal platform with AI-powered matching and automation"
+            }
+        ]
     },
     {
-        "title": "Fuzzy Tutor (In Progress)",
-        "time_period": "January 2023 - Present",
-        "descriptions": [
-            "Created an Online Exam system for Teachers to conduct Competitive Exams.",
-            "Build the Backend from scratch on AWS, supported by a postgres database hosted on Vercel."
-        ],
-        "languages": "AWS ,Ruby on Rails, React.js, MySql",
-        "repository": "https://github.com/Adhikram/fuzzy_tutor"
+        "company": "Equal Collective",
+        "company_location": "",
+        "role": "Founding Engineer",
+        "time_duration": "January 2024 - January 2026",
+        "site": "https://www.linkedin.com/company/equal-collective/",
+        "details": [
+            {
+                "title": "Lead Management \\& Analytics Platform",
+                "descriptions": [
+                    "Lead the Product from Scratch to a point where it is being sustainable by itself, generating leads and revenue.",
+                    "Developed a lead management platform for the sales team, enabling efficient tracking of large datasets.",
+                    "Built a backend system that automates human-like analysis of leads, providing actionable insights to the sales team.",
+                    "Upgraded the Product analysing system performance by 80\\% by redoing the Data Model and the Analysis Pipeline.",
+                    "Hosted Custom Generic Models to cater the needs of the product which saves us from cost of generic models."
+                ],
+                "languages": "Stack:- AWS, Node.js, Postgres, Azure, Data Modeling",
+                "scale": "Scaling from 0 to 20K+ monthly revenue with efficient lead tracking"
+            }
+        ]
+    },
+    {
+        "company": "Resume \\& Website Generator",
+        "company_location": "",
+        "role": "Developer",
+        "time_duration": "2020 - Present",
+        "repository": "https://github.com/Adhikram/adhikram.github.io",
+        "details": [
+            {
+                "title": "Automated Resume \\& Portfolio System",
+                "descriptions": [
+                    "Built an automated system that generates multiple resume variants and a portfolio website from a single JSON data source.",
+                    "Implemented LuaTeX-based PDF generation with custom LaTeX templates for professional resume formatting.",
+                    "Integrated Jekyll static site generator to automatically create and deploy portfolio website from the same data.",
+                    "Eliminated manual resume updates - simply edit JSON files to regenerate all resume variants and website simultaneously."
+                ],
+                "languages": "Stack:- LuaTeX, LaTeX, Jekyll, Ruby, Lua, JSON",
+                "scale": "Single source of truth generating 4 resume variants + portfolio website"
+            }
+        ]
     }
 ]

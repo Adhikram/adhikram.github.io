@@ -13,7 +13,7 @@ A json based resume webpage. Made to work with `jekyll` based `github-pages`. Sa
 
 2. **Run the site:**
    ```bash
-   bundle exec jekyll serve --baseurl="bo"
+   bundle exec jekyll serve --baseurl=""
    ```
    
    The site will be available at `http://127.0.0.1:4000/`

@@ -91,6 +91,63 @@ function printProjItems(file)
   end  
 end
 
+function printProdItems(file)
+  local json = getJsonFromFile(file)
+  
+  for _, value in ipairs(json) do
+    tex.print("\\begin{small}")
+    tex.print("\\resumeSubHeadingListStart")
+    tex.print("\\resumeExpEntry")
+    
+    -- Use company (product name)
+    tex.print("{" .. value["company"] .. "}")
+    
+    -- Add link as "location" with icon
+    local location = ""
+    if value["site"] then
+      location = "\\href{" .. value["site"] .. "}{\\faGlobe}"
+    elseif value["repository"] then
+      location = "\\href{" .. value["repository"] .. "}{\\faGithub}"
+    end
+    tex.print("{" .. location .. "}")
+    
+    -- Role
+    tex.print("{" .. value["role"] .. "}")
+    
+    -- Stack (pass empty string if not present to avoid nil error)
+    local stack = value["stack"] or ""
+    tex.print("{" .. stack .. "}")
+    
+    -- Time duration
+    tex.print("{" .. value["time_duration"] .. "}")
+
+    tex.print("\\resumeItemListStart")
+    
+    -- Print details (similar to experience)
+    for _, detail in ipairs(value["details"]) do
+      tex.print("\\item{" .. detail["title"] .. " \\hfill \\textit{" .. detail["languages"] .. "}}")
+
+      -- Check if "scale" field exists
+      if detail["scale"] then
+        tex.print("\\newline \\textbf{ Scale:- }  " .. detail["scale"] .. " \\hfill")
+      end
+      
+      -- Print descriptions with sub-bullets
+      tex.print("\\begin{itemize}")
+      for _, description in ipairs(detail["descriptions"]) do
+        tex.print("\\item " .. description)
+        tex.print("\\vspace{2pt}")
+      end
+      tex.print("\\end{itemize}")
+    end
+    
+    tex.print("\\resumeItemListEnd")
+    tex.print("\\vspace{-1pt}")
+    tex.print("\\resumeSubHeadingListEnd")
+    tex.print("\\end{small}")
+  end
+end
+
 
 
 
@@ -115,6 +172,7 @@ function printSkills(file, index)
   
   for _, skill in ipairs(skills) do
     tex.print("\\textbf{" .. skill["title"] .. "} | \\emph{" .. skill["details"] .. "}\\\\")
+    tex.print("\\vspace{2pt}")  -- Add spacing between skill categories
   end
 end
 

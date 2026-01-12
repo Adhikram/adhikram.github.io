@@ -110,7 +110,12 @@ require("./_lua/parser.lua")
 \section{Experience}
 \directlua{printExpItems("./_data/exp.json")}
 
+\newpage
 
+% Print Products
+%-------------------------------------------
+\section{Products}
+\directlua{printProdItems("./_data/proj.json")}
 
 % Print Education
 %-------------------------------------------
@@ -118,11 +123,6 @@ require("./_lua/parser.lua")
     \resumeSubHeadingListStart
     \directlua{printEduItems("./_data/edu.json")}
     \resumeSubHeadingListEnd
-
-% Print Projects
-%-------------------------------------------
-\section{Projects}
-\directlua{printProjItems("./_data/proj.json")}
 
 % Print Skills
 %-------------------------------------------
