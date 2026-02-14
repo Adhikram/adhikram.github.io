@@ -4,13 +4,15 @@
         "website": "https://creator.techprufer.com/",
         "email": "adhikrammaitra@gmail.com",
         "phone": "+91 9836965075",
-        "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
-        "github":"https://github.com/Adhikram",
-        "resume":"Adhikram_Maitra_Resume.pdf",
-        "skills":[
+        "linkedin": "https://www.linkedin.com/in/adhikram-maitra/",
+        "github": "https://github.com/Adhikram",
+        "resume": "Adhikram_Maitra_Resume.pdf",
+        "image": "assets/images/profile.jpg",
+        "summary": "I launched my career as a Founding Backend Engineer, architecting the digital backbone for an Ed-tech startup that scaled to 10,000 users in just three months. <br><br> Hungry for the accountability of massive scale, I pivoted into Data Engineering, where I built high-performance systems at Media.net, processing 3 billion rows of data and slashing latency by 50%. <br><br> Leveraging that technical grit, I helped build a SaaS tool from the ground up, scaling it from zero to $20,000 in monthly revenue. <br><br> Now, I’m at the frontier of the AI Domain, engineering agentic RAG layers and AI-native outreach funnels that empower the Real Estate industry to make data-driven decisions and close million-dollar deals at scale.",
+        "skills": [
             {
                 "title": "Languages",
-                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL, PostgreSQL, MySQL, Ruby, C++"
             },
             {
                 "title": "Backend \\& Frameworks",
@@ -18,7 +20,7 @@
             },
             {
                 "title": "Cloud \\& DevOps",
-                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
+                "details": "AWS, EC2, EMR, SQS, Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
                 "title": "Databases \\& Data Engineering",
@@ -40,54 +42,18 @@
     },
     {
         "name": "Adhikram Maitra",
-        "website": "https://creator.techprufer.com/jobs",
-        "email": "amjobapplications@gmail.com",
-        "phone": "+91 9836965075",
-        "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
-        "github":"https://github.com/Adhikram",
-        "resume":"Adhikram_Maitra_Jobs_Resume.pdf",
-        "skills":[
-            {
-                "title": "Languages",
-                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
-            },
-            {
-                "title": "Backend \\& Frameworks",
-                "details": "Node.js, Ruby on Rails, Next.js, Express, REST APIs, Microservices"
-            },
-            {
-                "title": "Cloud \\& DevOps",
-                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
-            },
-            {
-                "title": "Databases \\& Data Engineering",
-                "details": "PostgreSQL, MySQL, Spark, Kafka, Structured Streaming, HDFS, Hive, PySpark, ETL, Data Modeling"
-            },
-            {
-                "title": "AI \\& Machine Learning",
-                "details": "Agentic AI, Multi-LLM Integration, LLM Fine-Tuning, Prompt Engineering, Vector Databases, RAG"
-            },
-            {
-                "title": "Analytics \\& Monitoring",
-                "details": "Metabase, Data Pipelines, A/B Testing, Performance Monitoring, Real-time Analytics"
-            },
-            {
-                "title": "Software Engineering",
-                "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
-            }
-        ]
-    },{
-        "name": "Adhikram Maitra",
         "website": "https://creator.techprufer.com/refs",
         "email": "amjobreferrals@gmail.com",
         "phone": "+91 9836965075",
-        "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
-        "github":"https://github.com/Adhikram",
-        "resume":"Adhikram_Maitra_Referrals_Resume.pdf",
-        "skills":[
+        "linkedin": "https://www.linkedin.com/in/adhikram-maitra/",
+        "github": "https://github.com/Adhikram",
+        "resume": "Adhikram_Maitra_Referrals_Resume.pdf",
+        "image": "assets/images/profile.jpg",
+        "summary": "I launched my career as a Founding Backend Engineer, architecting the digital backbone for an Ed-tech startup that scaled to 10,000 users in just three months. <br><br> Hungry for the accountability of massive scale, I pivoted into Data Engineering, where I built high-performance systems at Media.net, processing 3 billion rows of data and slashing latency by 50%. <br><br> Leveraging that technical grit, I helped build a SaaS tool from the ground up, scaling it from zero to $20,000 in monthly revenue. <br><br> Now, I’m at the frontier of the AI Domain, engineering agentic RAG layers and AI-native outreach funnels that empower the Real Estate industry to make data-driven decisions and close million-dollar deals at scale.",
+        "skills": [
             {
                 "title": "Languages",
-                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL, PostgreSQL, MySQL, Ruby, C++"
             },
             {
                 "title": "Backend \\& Frameworks",
@@ -95,7 +61,7 @@
             },
             {
                 "title": "Cloud \\& DevOps",
-                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
+                "details": "AWS, EC2, EMR, SQS, Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
                 "title": "Databases \\& Data Engineering",
@@ -114,18 +80,21 @@
                 "details": "Design Patterns, OOP, Distributed Systems, System Architecture, Algorithms"
             }
         ]
-    },{
-        "name": "Adhikram Maitra",      
+    },
+    {
+        "name": "Adhikram Maitra",
         "website": "https://creator.techprufer.com/masked",
         "email": "XXXXXXXXXXX@gmail.com",
         "phone": "+91 XXXXXXXXXXX",
-        "linkedin":"https://www.linkedin.com/in/adhikram-maitra/",
-        "github":"https://github.com/Adhikram",
-        "resume":"Adhikram_Maitra_Resume_Masked.pdf",
-        "skills":[
+        "linkedin": "https://www.linkedin.com/in/adhikram-maitra/",
+        "github": "https://github.com/Adhikram",
+        "resume": "Adhikram_Maitra_Resume_Masked.pdf",
+        "image": "assets/images/profile.jpg",
+        "summary": "I launched my career as a Founding Backend Engineer, architecting the digital backbone for an Ed-tech startup that scaled to 10,000 users in just three months. <br><br> Hungry for the accountability of massive scale, I pivoted into Data Engineering, where I built high-performance systems at Media.net, processing 3 billion rows of data and slashing latency by 50%. <br><br> Leveraging that technical grit, I helped build a SaaS tool from the ground up, scaling it from zero to $20,000 in monthly revenue. <br><br> Now, I’m at the frontier of the AI Domain, engineering agentic RAG layers and AI-native outreach funnels that empower the Real Estate industry to make data-driven decisions and close million-dollar deals at scale.",
+        "skills": [
             {
                 "title": "Languages",
-                "details": "Python, JavaScript, Scala, Java, SQL (PostgreSQL, MySQL), Ruby, C++"
+                "details": "Python, JavaScript, Scala, Java, SQL, PostgreSQL, MySQL, Ruby, C++"
             },
             {
                 "title": "Backend \\& Frameworks",
@@ -133,7 +102,7 @@
             },
             {
                 "title": "Cloud \\& DevOps",
-                "details": "AWS (EC2, EMR, SQS), Azure, Docker, Jenkins, Git, Nginx, Redis"
+                "details": "AWS,EC2, EMR, SQS, Azure, Docker, Jenkins, Git, Nginx, Redis"
             },
             {
                 "title": "Databases \\& Data Engineering",

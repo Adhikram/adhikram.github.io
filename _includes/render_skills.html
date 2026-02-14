@@ -1,0 +1,19 @@
+{% assign input = include.input %}
+{% assign separator = include.separator | default: ',' %}
+{% assign cleaned_input = input | replace: 'Stack:-', '' | replace: 'Stack : -', '' | replace: '\textbf{', '' | replace: '}', '' %}
+{% assign items = cleaned_input | split: separator %}
+
+{% for item in items %}
+  {% assign trimmed_item = item | strip %}
+  {% assign lower_item = trimmed_item | downcase %}
+  {% assign tech = site.data.tech_stack | where: "id", lower_item | first %}
+  
+  {% if tech %}
+    <a href="{{ tech.url }}" target="_blank" class="tech-tag-link" title="{{ tech.name }} Documentation">
+      <i class="{{ tech.icon }}"></i> {{ tech.name }}
+    </a>
+  {% else %}
+    <span class="tech-tag-text">{{ trimmed_item }}</span>
+  {% endif %}
+  {% unless forloop.last %}{% endunless %}
+{% endfor %}

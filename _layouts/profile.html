@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    {% assign personalData = site.data.personal[page.profile_index] %}
+    {% assign close_brace = '}' %}
+    {% assign open_brace = '\textbf{' %}
+    {% assign percent = '\%' %}
+    {% assign dollar = '\$' %}
+    {% assign ampersand = '\&' %}
+    
+    <title>{{ personalData.name }} | Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-blob"></div>
+    <div class="background-grid"></div>
+
+    <div class="container">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="profile-intro fade-in-up">
+                <div class="profile-image-container">
+                    {% if personalData.image %}
+                    <img src="{{ personalData.image | relative_url }}" alt="{{ personalData.name }}" class="profile-avatar">
+                    {% else %}
+                    <div class="profile-initials">{{ personalData.name | slice: 0, 1 }}</div>
+                    {% endif %}
+                </div>
+                <div class="profile-details">
+                    <h1 class="name">{{ personalData.name }}</h1>
+                    <div class="social-links">
+                        <a href="mailto:{{ personalData.email }}" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
+                        <a href="tel:{{ personalData.phone }}" class="social-link" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                        <a href="{{ personalData.linkedin }}" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="{{ personalData.github }}" target="_blank" class="social-link" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                        {% if page.url contains 'jobs' %}
+                        <a href="Adhikram_Maitra_Jobs_Resume.pdf" class="resume-btn" download><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                        {% elsif page.url contains 'refs' %}
+                        <a href="Adhikram_Maitra_Referrals_Resume.pdf" class="resume-btn" download><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                        {% elsif page.url contains 'masked' %}
+                        <a href="Adhikram_Maitra_Masked_Resume.pdf" class="resume-btn" download><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                        {% else %}
+                        <a href="Adhikram_Maitra_Resume.pdf" class="resume-btn" download><i class="fa-solid fa-file-arrow-down"></i> Resume</a>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            
+            <!-- Summary Section -->
+            <section id="about" class="section fade-in-up" style="animation-delay: 0.2s;">
+                <h2 class="section-title"><i class="fa-solid fa-user"></i> About Me</h2>
+                <div class="card summary-card">
+                    <div class="summary-text">
+                        <i class='fa-solid fa-rocket' style='color: #60a5fa;'></i> launched my career as a <strong>Founding Backend Engineer</strong>, architecting the digital backbone for an Ed-tech startup that scaled to <strong>10,000 users</strong> in just three months. <br><br> 
+                        <i class='fa-solid fa-server' style='color: #a78bfa;'></i> Hungry for the accountability of massive scale, I pivoted into <strong>Data Engineering</strong>, where I built high-performance systems at Media.net, processing <strong>3 billion rows</strong> of data and slashing latency by <strong>50%</strong>. <br><br> 
+                        <i class='fa-solid fa-chart-line' style='color: #34d399;'></i> Leveraging that technical grit, I helped build a SaaS tool from the ground up, scaling it from zero to <strong>$20,000 in monthly revenue</strong>. <br><br> 
+                        <i class='fa-solid fa-brain' style='color: #f472b6;'></i> Now, I’m at the frontier of the <strong>AI Domain</strong>, engineering agentic RAG layers and AI-native outreach funnels that empower the <strong>Real Estate</strong> industry to make data-driven decisions and close <strong>million-dollar deals</strong> at scale.
+                    </div>
+                </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" class="section">
+                <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Experience</h2>
+                <div class="timeline">
+                    {% for experience in site.data.exp %}
+                    <div class="timeline-item reveal-on-scroll">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content card">
+                            <div class="card-header">
+                                <h3 class="company">
+                                    {{ experience.company | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}
+                                    <span class="company-links">
+                                        {% if experience.company_website %}
+                                        <a href="{{ experience.company_website }}" target="_blank" class="company-link" title="Website"><i class="fa-solid fa-globe"></i></a>
+                                        {% endif %}
+                                        {% if experience.company_linkedin %}
+                                        <a href="{{ experience.company_linkedin }}" target="_blank" class="company-link" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                                        {% endif %}
+                                    </span>
+                                </h3>
+                                <span class="duration">{{ experience.time_duration | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                            </div>
+                            <div class="role-stack">
+                                <span class="role">{{ experience.role | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                                {% if experience.stack %}
+                                <span class="stack-tag">
+                                    {% assign stack_clean = experience.stack | replace: open_brace, '' | replace: close_brace, '' | replace: percent, '' | replace: dollar, '' | replace: ampersand, '' %}
+                                    {% include render_skills.html input=stack_clean separator=',' %}
+                                </span>
+                                {% endif %}
+                            </div>
+                            <div class="location"><i class="fa-solid fa-location-dot"></i> {{ experience.company_location | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</div>
+                            
+                            <ul class="details-list">
+                                {% for detail in experience.details %}
+                                <li>
+                                    <span class="detail-title">
+                                        {{ detail.title | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}
+                                        {% if detail.languages %}
+                                        <span class="tech-badge">
+                                            {% assign langs_clean = detail.languages | replace: open_brace, '' | replace: close_brace, '' | replace: percent, '' | replace: dollar, '' | replace: ampersand, '' %}
+                                            {% include render_skills.html input=langs_clean separator=',' %}
+                                        </span>
+                                        {% endif %}
+                                        {% if detail.scale %}
+                                        <span class="scale-badge">Scale: {{ detail.scale | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                                        {% endif %}
+                                    </span>
+                                    
+                                    {% comment %} Handle both 'effect' and 'Effect' {% endcomment %}
+                                    {% assign effect = detail.effect | default: detail.Effect %}
+                                    {% if effect %}
+                                    <p class="detail-desc" style="color: #10b981; margin-bottom: 0.25rem;"><i class="fa-solid fa-arrow-trend-up"></i> {{ effect | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</p>
+                                    {% endif %}
+                                    
+                                    {% if detail.description %}
+                                    <p class="detail-desc">{{ detail.description | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</p>
+                                    {% endif %}
+                                    
+                                    {% if detail.descriptions %}
+                                    <ul class="sub-details">
+                                        {% for description in detail.descriptions %}
+                                        <li>{{ description | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Projects / Products Section -->
+            <section id="products" class="section">
+                <h2 class="section-title"><i class="fa-solid fa-code-branch"></i> Projects & Products</h2>
+                <div class="projects-grid">
+                    {% for product in site.data.proj %}
+                    <article class="project-card card">
+                        <div class="card-header">
+                            <h3 class="company">{{ product.company | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</h3>
+                            <div class="project-links">
+                                {% if product.site %}
+                                <a href="{{ product.site }}" target="_blank" class="project-link" title="Visit Site">
+                                    <i class="fa-solid fa-up-right-from-square"></i>
+                                </a>
+                                {% endif %}
+                                {% if product.repository %}
+                                <a href="{{ product.repository }}" target="_blank" class="project-link" title="View Code">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        
+                        <div class="role-duration">
+                            <span class="role">{{ product.role | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                            <span class="duration">{{ product.time_duration | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                        </div>
+                        
+                        <div class="project-details">
+                            {% for detail in product.details %}
+                            <div class="detail-group">
+                                <div class="detail-header">
+                                    <span class="detail-title">{{ detail.title | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</span>
+                                    <div class="badges">
+                                        {% if detail.languages %}
+                                        <span class="tech-badge">
+                                            {% assign langs_proj = detail.languages | replace: open_brace, '' | replace: close_brace, '' | replace: percent, '' | replace: dollar, '' | replace: ampersand, '' %}
+                                            {% include render_skills.html input=langs_proj separator=',' %}
+                                        </span>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                {% comment %} Handle both 'effect' and 'Effect' for projects too {% endcomment %}
+                                {% assign effect = detail.effect | default: detail.Effect %}
+                                {% if effect %}
+                                <p class="detail-desc" style="color: #10b981; margin-bottom: 0.25rem; font-size: 0.85rem;"><i class="fa-solid fa-arrow-trend-up"></i> {{ effect | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</p>
+                                {% endif %}
+                                
+                                {% if detail.descriptions %}
+                                <ul class="sub-details">
+                                    {% for description in detail.descriptions %}
+                                    <li>{{ description | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}</li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </article>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="section">
+                <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+                <div class="education-grid">
+                    {% for schoolData in site.data.edu %}
+                    <div class="education-card card">
+                        <div class="edu-header">
+                            <h3 class="school">
+                                {{ schoolData.school }}
+                                {% if schoolData.google_map %}
+                                <span class="company-links">
+                                    <a href="{{ schoolData.google_map }}" target="_blank" class="company-link" title="View on Map"><i class="fa-solid fa-map-location-dot"></i></a>
+                                </span>
+                                {% endif %}
+                            </h3>
+                            <span class="duration">{{ schoolData.time_period }}</span>
+                        </div>
+                        <div class="degree">{{ schoolData.degree }}</div>
+                        <div class="location">
+                            {% if schoolData.google_map %}
+                            <a href="{{ schoolData.google_map }}" target="_blank" style="color: inherit; text-decoration: none;">
+                                <i class="fa-solid fa-location-dot"></i> {{ schoolData.school_location }}
+                            </a>
+                            {% else %}
+                            <i class="fa-solid fa-location-dot"></i> {{ schoolData.school_location }}
+                            {% endif %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills" class="section">
+                <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> Technical Skills</h2>
+                <div class="skills-grid">
+                    {% for skill in personalData.skills %}
+                    {% assign icon = 'fa-wrench' %}
+                    {% if skill.title contains 'Languages' %}{% assign icon = 'fa-code' %}
+                    {% elsif skill.title contains 'Backend' %}{% assign icon = 'fa-server' %}
+                    {% elsif skill.title contains 'Cloud' %}{% assign icon = 'fa-cloud' %}
+                    {% elsif skill.title contains 'Databases' %}{% assign icon = 'fa-database' %}
+                    {% elsif skill.title contains 'AI' %}{% assign icon = 'fa-brain' %}
+                    {% elsif skill.title contains 'Analytics' %}{% assign icon = 'fa-chart-line' %}
+                    {% elsif skill.title contains 'Software' %}{% assign icon = 'fa-cubes' %}
+                    {% endif %}
+                    
+                    <div class="skill-category card">
+                        <h3 class="category-title">
+                            <i class="fa-solid {{ icon }}" style="margin-right: 8px; color: var(--accent-color); font-size: 0.9em;"></i>
+                            {{ skill.title | replace: open_brace, '<strong>' | replace: close_brace, '</strong>' | replace: percent, '%' | replace: dollar, '$' | replace: ampersand, '&' }}
+                        </h3>
+                        <p class="skill-list">
+                            {% assign skill_details_clean = skill.details | replace: open_brace, '' | replace: close_brace, '' | replace: percent, '' | replace: dollar, '' | replace: ampersand, '' %}
+                            {% include render_skills.html input=skill_details_clean separator=',' %}
+                        </p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="social-links footer-social">
+                    <a href="https://github.com/Adhikram/adhikram.github.io" target="_blank" aria-label="Source Code">
+                        <i class="fa-solid fa-code"></i> Source
+                    </a>
+                    {% if personalData.resume %}
+                    <a href="{{ personalData.resume }}" download aria-label="Download Resume">
+                        <i class="fa-solid fa-file-arrow-down"></i> Resume
+                    </a>
+                    {% endif %}
+                </div>
+                <p class="copyright">&copy; {{ "now" | date: "%Y" }} {{ personalData.name }}. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>

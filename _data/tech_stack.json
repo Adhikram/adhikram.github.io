@@ -1,0 +1,398 @@
+[
+  {
+    "id": "python",
+    "name": "Python",
+    "icon": "devicon-python-plain",
+    "url": "https://www.python.org/doc/"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "icon": "devicon-javascript-plain",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "id": "scala",
+    "name": "Scala",
+    "icon": "devicon-scala-plain",
+    "url": "https://docs.scala-lang.org/"
+  },
+  {
+    "id": "java",
+    "name": "Java",
+    "icon": "devicon-java-plain",
+    "url": "https://docs.oracle.com/en/java/"
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "icon": "devicon-postgresql-plain",
+    "url": "https://www.postgresql.org/docs/"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "icon": "devicon-postgresql-plain",
+    "url": "https://www.postgresql.org/docs/"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "icon": "devicon-mysql-plain",
+    "url": "https://dev.mysql.com/doc/"
+  },
+  {
+    "id": "ruby",
+    "name": "Ruby",
+    "icon": "devicon-ruby-plain",
+    "url": "https://www.ruby-lang.org/en/documentation/"
+  },
+  {
+    "id": "c++",
+    "name": "C++",
+    "icon": "devicon-cplusplus-plain",
+    "url": "https://devdocs.io/cpp/"
+  },
+  {
+    "id": "node.js",
+    "name": "Node.js",
+    "icon": "devicon-nodejs-plain",
+    "url": "https://nodejs.org/en/docs/"
+  },
+  {
+    "id": "ruby on rails",
+    "name": "Ruby on Rails",
+    "icon": "devicon-rails-plain",
+    "url": "https://guides.rubyonrails.org/"
+  },
+  {
+    "id": "next.js",
+    "name": "Next.js",
+    "icon": "devicon-nextjs-plain",
+    "url": "https://nextjs.org/docs"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "icon": "devicon-express-original",
+    "url": "https://expressjs.com/"
+  },
+  {
+    "id": "aws",
+    "name": "AWS",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://docs.aws.amazon.com/"
+  },
+  {
+    "id": "azure",
+    "name": "Azure",
+    "icon": "devicon-azure-plain",
+    "url": "https://docs.microsoft.com/en-us/azure/"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "icon": "devicon-docker-plain",
+    "url": "https://docs.docker.com/"
+  },
+  {
+    "id": "jenkins",
+    "name": "Jenkins",
+    "icon": "devicon-jenkins-plain",
+    "url": "https://www.jenkins.io/doc/"
+  },
+  {
+    "id": "git",
+    "name": "Git",
+    "icon": "devicon-git-plain",
+    "url": "https://git-scm.com/doc"
+  },
+  {
+    "id": "nginx",
+    "name": "Nginx",
+    "icon": "devicon-nginx-original",
+    "url": "https://nginx.org/en/docs/"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "icon": "devicon-redis-plain",
+    "url": "https://redis.io/documentation"
+  },
+  {
+    "id": "spark",
+    "name": "Spark",
+    "icon": "devicon-apache-plain",
+    "url": "https://spark.apache.org/docs/latest/"
+  },
+  {
+    "id": "kafka",
+    "name": "Kafka",
+    "icon": "devicon-apachekafka-original",
+    "url": "https://kafka.apache.org/documentation/"
+  },
+  {
+    "id": "hadoop",
+    "name": "Hadoop",
+    "icon": "devicon-hadoop-plain",
+    "url": "https://hadoop.apache.org/"
+  },
+  {
+    "id": "hive",
+    "name": "Hive",
+    "icon": "fa-solid fa-server",
+    "url": "https://hive.apache.org/"
+  },
+  {
+    "id": "pyspark",
+    "name": "PySpark",
+    "icon": "devicon-python-plain",
+    "url": "https://spark.apache.org/docs/latest/api/python/"
+  },
+  {
+    "id": "linux",
+    "name": "Linux",
+    "icon": "devicon-linux-plain",
+    "url": "https://kernel.org/"
+  },
+  {
+    "id": "metabase",
+    "name": "Metabase",
+    "icon": "fa-solid fa-chart-bar",
+    "url": "https://www.metabase.com/docs/"
+  },
+  {
+    "id": "langchain",
+    "name": "Langchain",
+    "icon": "fa-solid fa-link",
+    "url": "https://python.langchain.com/docs/get_started/introduction"
+  },
+  {
+    "id": "gemini",
+    "name": "Gemini",
+    "icon": "fa-solid fa-robot",
+    "url": "https://deepmind.google/technologies/gemini/"
+  },
+  {
+    "id": "grok",
+    "name": "Grok",
+    "icon": "fa-solid fa-brain",
+    "url": "https://grok.x.ai/"
+  },
+  {
+    "id": "jupyter",
+    "name": "Jupyter",
+    "icon": "devicon-jupyter-plain",
+    "url": "https://jupyter.org/documentation"
+  },
+  {
+    "id": "lua",
+    "name": "Lua",
+    "icon": "devicon-lua-plain",
+    "url": "https://www.lua.org/docs.html"
+  },
+  {
+    "id": "latex",
+    "name": "LaTeX",
+    "icon": "devicon-latex-original",
+    "url": "https://www.latex-project.org/help/documentation/"
+  },
+  {
+    "id": "luatex",
+    "name": "LuaTeX",
+    "icon": "devicon-lua-plain",
+    "url": "http://www.luatex.org/documentation.html"
+  },
+  {
+    "id": "jekyll",
+    "name": "Jekyll",
+    "icon": "devicon-jekyll-plain",
+    "url": "https://jekyllrb.com/docs/"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "icon": "devicon-playwright-plain",
+    "url": "https://playwright.dev/"
+  },
+  {
+    "id": "puppeteer",
+    "name": "Puppeteer",
+    "icon": "devicon-puppeteer-plain",
+    "url": "https://pptr.dev/"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "icon": "devicon-typescript-plain",
+    "url": "https://www.typescriptlang.org/docs/"
+  },
+  {
+    "id": "prompt engineering",
+    "name": "Prompt Engineering",
+    "icon": "fa-solid fa-message",
+    "url": "https://www.promptingguide.ai/"
+  },
+  {
+    "id": "rag",
+    "name": "RAG",
+    "icon": "fa-solid fa-database",
+    "url": "https://aws.amazon.com/what-is/retrieval-augmented-generation/"
+  },
+  {
+    "id": "agentic ai",
+    "name": "Agentic AI",
+    "icon": "fa-solid fa-robot",
+    "url": "https://www.coursera.org/articles/what-is-agentic-ai"
+  },
+  {
+    "id": "etl",
+    "name": "ETL",
+    "icon": "fa-solid fa-filter",
+    "url": "https://en.wikipedia.org/wiki/Extract,_transform,_load"
+  },
+  {
+    "id": "data modeling",
+    "name": "Data Modeling",
+    "icon": "fa-solid fa-diagram-project",
+    "url": "https://en.wikipedia.org/wiki/Data_modeling"
+  },
+  {
+    "id": "smartlead",
+    "name": "SmartLead",
+    "icon": "fa-solid fa-bullseye",
+    "url": "https://smartlead.ai/"
+  },
+  {
+    "id": "bullmq",
+    "name": "BullMQ",
+    "icon": "fa-solid fa-cow",
+    "url": "https://bullmq.io/"
+  },
+  {
+    "id": "amazon sqs",
+    "name": "Amazon SQS",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://aws.amazon.com/sqs/"
+  },
+  {
+    "id": "amazon ses",
+    "name": "Amazon SES",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://aws.amazon.com/ses/"
+  },
+  {
+    "id": "hdfs",
+    "name": "HDFS",
+    "icon": "devicon-hadoop-plain",
+    "url": "https://hadoop.apache.org/"
+  },
+  {
+    "id": "ec2",
+    "name": "EC2",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://aws.amazon.com/ec2/"
+  },
+  {
+    "id": "emr",
+    "name": "EMR",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://aws.amazon.com/emr/"
+  },
+  {
+    "id": "sqs",
+    "name": "SQS",
+    "icon": "devicon-amazonwebservices-plain-wordmark",
+    "url": "https://aws.amazon.com/sqs/"
+  },
+  {
+    "id": "structured streaming",
+    "name": "Structured Streaming",
+    "icon": "devicon-apache-plain",
+    "url": "https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html"
+  },
+  {
+    "id": "multi-llm integration",
+    "name": "Multi-LLM Integration",
+    "icon": "fa-solid fa-network-wired",
+    "url": "https://python.langchain.com/docs/integrations/llms/"
+  },
+  {
+    "id": "llm fine-tuning",
+    "name": "LLM Fine-Tuning",
+    "icon": "fa-solid fa-sliders",
+    "url": "https://huggingface.co/docs/transformers/training"
+  },
+  {
+    "id": "vector databases",
+    "name": "Vector Databases",
+    "icon": "fa-solid fa-database",
+    "url": "https://www.pinecone.io/learn/vector-database/"
+  },
+  {
+    "id": "data pipelines",
+    "name": "Data Pipelines",
+    "icon": "fa-solid fa-arrow-right-arrow-left",
+    "url": "https://aws.amazon.com/what-is/data-pipeline/"
+  },
+  {
+    "id": "a/b testing",
+    "name": "A/B Testing",
+    "icon": "fa-solid fa-flask",
+    "url": "https://www.optimizely.com/optimization-glossary/ab-testing/"
+  },
+  {
+    "id": "performance monitoring",
+    "name": "Performance Monitoring",
+    "icon": "fa-solid fa-chart-line",
+    "url": "https://www.datadoghq.com/product/"
+  },
+  {
+    "id": "real-time analytics",
+    "name": "Real-time Analytics",
+    "icon": "fa-solid fa-clock",
+    "url": "https://cloud.google.com/learn/what-is-streaming-analytics"
+  },
+  {
+    "id": "design patterns",
+    "name": "Design Patterns",
+    "icon": "fa-solid fa-layer-group",
+    "url": "https://refactoring.guru/design-patterns"
+  },
+  {
+    "id": "oop",
+    "name": "OOP",
+    "icon": "fa-solid fa-cubes",
+    "url": "https://en.wikipedia.org/wiki/Object-oriented_programming"
+  },
+  {
+    "id": "distributed systems",
+    "name": "Distributed Systems",
+    "icon": "fa-solid fa-server",
+    "url": "https://en.wikipedia.org/wiki/Distributed_computing"
+  },
+  {
+    "id": "system architecture",
+    "name": "System Architecture",
+    "icon": "fa-solid fa-sitemap",
+    "url": "https://martinfowler.com/architecture/"
+  },
+  {
+    "id": "algorithms",
+    "name": "Algorithms",
+    "icon": "fa-solid fa-calculator",
+    "url": "https://www.geeksforgeeks.org/fundamentals-of-algorithms/"
+  },
+  {
+    "id": "rest apis",
+    "name": "REST APIs",
+    "icon": "fa-solid fa-ethernet",
+    "url": "https://restfulapi.net/"
+  },
+  {
+    "id": "microservices",
+    "name": "Microservices",
+    "icon": "fa-solid fa-cubes-stacked",
+    "url": "https://en.wikipedia.org/wiki/Microservices"
+  }
+]
