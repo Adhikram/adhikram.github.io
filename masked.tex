@@ -15,6 +15,10 @@
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 \usepackage[urw-garamond]{mathdesign}
+
+% Fix bold font issue - map \textbf to use 'bx' series instead of 'mb'
+\renewcommand{\bfdefault}{bx}
+
 \RequirePackage{luatex85}
 \usepackage{pdfcomment}
 \usepackage{luacode}

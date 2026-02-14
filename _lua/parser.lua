@@ -8,6 +8,28 @@ function getJsonFromFile(file)
   return jsonData
 end
 
+-- Helper function to unescape backslashes from JSON for LaTeX commands
+function unescapeFromJson(str)
+  -- JSON stores LaTeX commands as \\textbf, \\textit, etc. (double backslash)
+  -- We need to convert \\ back to single \ for LaTeX commands
+  -- But preserve \\$ \\% \\{ \\} as they need to stay double-escaped
+  
+  if not str then return "" end
+  
+  -- Replace \\textbf, \\textit, \\emph, etc. with single backslash
+  str = string.gsub(str, "\\\\(text[a-z]+)", "\\%1")
+  str = string.gsub(str, "\\\\(emph)", "\\%1")
+  str = string.gsub(str, "\\\\(it)", "\\%1")
+  str = string.gsub(str, "\\\\(bf)", "\\%1")
+  str = string.gsub(str, "\\\\(underline)", "\\%1")
+  str = string.gsub(str, "\\\\(cite)", "\\%1")
+  str = string.gsub(str, "\\\\(href)", "\\%1")
+  
+  return str
+end
+
+
+
 function printEduItems(file)
   local json = getJsonFromFile(file)
   for key, value in pairs(json) do
@@ -38,12 +60,16 @@ function printExpItems(file)
 
       -- Check if "scale" field exists before concatenating
       if detail["scale"] then
-        tex.print("\\newline \\textbf{ Scale:- }  " .. detail["scale"] .. " \\hfill")
+        tex.print("\\newline \\textbf{ Scale:- }  " .. unescapeFromJson(detail["scale"]) .. " \\hfill")
+      end
+      -- Check if "effect" field exists
+      if detail["effect"] then
+        tex.print("\\newline \\textbf{ Effect:- }  " .. unescapeFromJson(detail["effect"]) .. " \\hfill")
       end
       -- Print descriptions with sub-bullets
       tex.print("\\begin{itemize}")
       for _, description in ipairs(detail["descriptions"]) do
-        tex.print("\\item " .. description)
+        tex.print("\\item " .. unescapeFromJson(description))
         tex.print("\\vspace{2pt}")
       end
       tex.print("\\end{itemize}")
@@ -80,7 +106,7 @@ function printProjItems(file)
 
     tex.print("\\begin{itemize}")
     for _, description in ipairs(value["descriptions"]) do
-      tex.print("\\item " .. description)
+      tex.print("\\item " .. unescapeFromJson(description))
       tex.print("\\vspace{-5pt}")
     end
     tex.print("\\end{itemize}")
@@ -122,20 +148,24 @@ function printProdItems(file)
     tex.print("{" .. value["time_duration"] .. "}")
 
     tex.print("\\resumeItemListStart")
-    
+
     -- Print details (similar to experience)
     for _, detail in ipairs(value["details"]) do
       tex.print("\\item{" .. detail["title"] .. " \\hfill \\textit{" .. detail["languages"] .. "}}")
 
       -- Check if "scale" field exists
       if detail["scale"] then
-        tex.print("\\newline \\textbf{ Scale:- }  " .. detail["scale"] .. " \\hfill")
+        tex.print("\\newline \\textbf{ Scale:- }  " .. unescapeFromJson(detail["scale"]) .. " \\hfill")
       end
-      
+      -- Check if "effect" field exists
+      if detail["effect"] then
+        tex.print("\\newline \\textbf{ Effect:- }  " .. unescapeFromJson(detail["effect"]) .. " \\hfill")
+      end
+
       -- Print descriptions with sub-bullets
       tex.print("\\begin{itemize}")
       for _, description in ipairs(detail["descriptions"]) do
-        tex.print("\\item " .. description)
+        tex.print("\\item " .. unescapeFromJson(description))
         tex.print("\\vspace{2pt}")
       end
       tex.print("\\end{itemize}")
