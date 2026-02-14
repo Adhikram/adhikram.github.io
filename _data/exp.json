@@ -2,6 +2,8 @@
   {
     "company": "Anax Real Estate",
     "company_location": "Remote, New York, USA",
+    "company_website": "https://anaxrep.com/",
+    "company_linkedin": "https://www.linkedin.com/company/anax-real-estate-partners/posts/?feedView=all",
     "role": "Founding Engineer",
     "time_duration": "April 2025 - Present",
     "stack": "Stack:- Python, Docker, Next.js, PostgreSQL",
@@ -10,7 +12,7 @@
         "title": "\\textbf{Agentic Wrapper}",
         "descriptions": [
           "Architeched the Ai layers of the product from scratch to enable the agentic ai to make data driven decisions Leading to ai native approach in the product.",
-          "Introduced RAG layer over more then \\textbf{20K+} Financial Document to Stream line the agentic hand that empowered the brokers to make data driven decisions."
+          "Introduced \\textbf{RAG layer} over more then \\textbf{20K+} Financial Document to Stream line the agentic hand that empowered the brokers to make data driven decisions."
         ],
         "languages": "Stack:- Prompt Engineering, RAG, Agentic toolkits, Gemini, Grok, Langchain",
         "effect": "Agentic AI makes data driven decisions leads to revenue increase in \\$\\textbf{100K+} dollars",
@@ -40,6 +42,8 @@
   {
     "company": "MEDIA.NET (Directi)",
     "company_location": "Remote, India",
+    "company_website": "https://www.media.net/",
+    "company_linkedin": "https://www.linkedin.com/company/media.net/",
     "role": "Data Application Developer 2",
     "time_duration": "October 2021 - April 2025",
     "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
@@ -48,9 +52,9 @@
         "title": "\\textbf{DANTE (Data Anomaly Tracker)}",
         "descriptions": [
           "Conceptualized our first configurable data quality tools which fortified data integrity and optimized parallel data reading, leading to a \\textbf{60\\%} reduction in data (\\textbf{>100GB}) processing time, .",
-          "EQ Tracer: A tool to monitor summative metric trends across configurable hierarchies with dynamic alerting mechanisms to filter out noise data, ensuring accurate insights.",
-          "Ratio Tracer: A tool for outlier detection using customizable percentile thresholds, enabling the proactive identification and mitigation of anomalies.",
-          "PM Tracer: A logging and monitoring tool that aggregates data from multiple sources, providing detailed coverage and mismatch analysis for enhanced data quality and system reliability."
+          "EQ Tracer: A tool to \\textbf{monitor summative metric trends} across configurable hierarchies with dynamic alerting mechanisms to filter out noise data, ensuring accurate insights.",
+          "Ratio Tracer: A tool for \\textbf{outlier detection} using customizable percentile thresholds, enabling the proactive identification and mitigation of anomalies.",
+          "PM Tracer: A logging and monitoring tool that aggregates data from multiple sources, \\textbf{providing detailed coverage and mismatch analysis} for enhanced data quality and system reliability."
 
         ],
         "languages": "Stack:- Scala, Spark, Hive",
@@ -70,6 +74,8 @@
   {
     "company": "DEVSNEST",
     "company_location": "Remote, India",
+    "company_website": "https://devsnest.in",
+    "company_linkedin": "https://www.linkedin.com/company/devsnest",
     "role": "Backend Engineer",
     "time_duration": "October 2020 - October 2021",
     "stack": "Stack:- Ruby on Rails, Python, Redis, Amazon SQS",
@@ -77,8 +83,7 @@
       {
         "title": "\\textbf{Discord Automation and Notification System}",
         "descriptions": [
-            "Pioneered automation for group moderation on Discord through website, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement.",
-            "Developed an orchestrator for Spark submissions and PySpark scripts, dynamically fetching configurations from MySQL. This centralizes and tracks job configurations while providing data for performance monitoring."
+            "Pioneered automation for group moderation on Discord through website, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement."
             ],
         "languages": "Stack:- Ruby on Rails, Python, Amazon SQS",
         "scale": "Sending \\textbf{2k messages per day}. Reaching \\textbf{10k Users} in \\textbf{3 months}"

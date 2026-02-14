@@ -1,16 +1,17 @@
 [
     {
-        "company": "Tech Prufer",
+        "company": "\\textbf{Tech Prufer - AI Job Portal}",
         "company_location": "",
         "role": "Founder",
         "time_duration": "January 2026 - Present",
         "site": "https://techprufer.com/",
         "details": [
-            {
+        {
                 "title": "\\textbf{Job Portal Platform}",
                 "descriptions": [
-                    "Building a Job Portal Platform for the Tech Industry to connect the candidates with the best opportunities.",
-                    "Developed the Backend from scratch on baremetal, supported by a PostgreSQL database for scalable data management."
+                    "Built a job portal platform that is focused on the tech industry to connect the candidates with the best opportunities.",
+                    "Added Automated Job Scraping to the platform to get the latest jobs from the web from Amazon, Google, Atlassian etc.",
+                    "Started as an personal project to understand the job trends live and to get the latest jobs from the web."
                 ],
                 "languages": "Stack:- Python, Next.js, PostgreSQL",
                 "scale": "Tech Job Portal platform with AI-powered matching and automation"
@@ -18,28 +19,37 @@
         ]
     },
     {
-        "company": "Equal Collective",
+        "company": "\\textbf{Equal Collective - Amazon Sellers Helper}",
         "company_location": "",
         "role": "Founding Engineer",
         "time_duration": "January 2024 - January 2026",
         "site": "https://www.linkedin.com/company/equal-collective/",
         "details": [
             {
-                "title": "\\textbf{Lead Management \\& Analytics Platform}",
+                "title": "\\textbf{Lead Reachout Funnel}",
                 "descriptions": [
                     "Lead the Product from Scratch to a point where it is self-sustaining, generating leads and revenue.",
-                    "Developed lead management platform for the sales, enabling efficient tracking of large datasets.",
-                    "Built AI Powered tools that automates human-like analysis of leads, providing actionable insights.",
-                    "Upgraded the Product analysis performance by \\textbf{80\\%} by enhancing the Data Model and the Analysis Pipeline.",
-                    "Hosted Custom Generic Models to cater the needs of the product which saves us from cost of generic models."
+                    "Developed reachout funnel that leads to more engagement and revenue by using AI powered outreach with Analytics."
                 ],
-                "languages": "Stack:- AWS, Node.js, Postgres, Azure, Data Modeling",
-                "scale": "Scaling from \\textbf{0 to 20K+ monthly revenue} with efficient lead tracking"
-            }
+                "languages": "Stack:- Smartlead, Metabase",
+                "Effect": "Scaling from \\textbf{0 to 20K+ monthly revenue} with efficient lead reachout"
+            },{
+                "title": "\\textbf{Sellers Automation}",
+                "descriptions": [
+                    "Introduced the Seller Content classification system to automate the content creation and quality control."
+                ],
+                "Effect": "Serving \\textbf{30K+} Sellers with AI Powered Content Creation and Quality Control"
+            },{
+                "title": "\\textbf{Amazon Scraping Integration}",
+                "descriptions": [
+                    "Bypass the Scraping Blockers of amazon to get the Reviews , Content and Listings data in scale."
+                ],
+                "Effect": "Serving \\textbf{30K+} Products data enhance the reachability of the sellers"
+             }
         ]
     },
     {
-        "company": "\\textbf{Resume \\& Website Generator}",
+        "company": "\\textbf{Resume \\& Website Generator - Adhikram.dev}",
         "company_location": "",
         "role": "Developer",
         "time_duration": "2020 - Present",

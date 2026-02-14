@@ -14,10 +14,15 @@
 \usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
+\usepackage{etoolbox}
 \usepackage[urw-garamond]{mathdesign}
 
 % Fix bold font issue - map \textbf to use 'bx' series instead of 'mb'
 \renewcommand{\bfdefault}{bx}
+
+% Increase line spacing
+\usepackage{setspace}
+\setstretch{1.05}
 
 \RequirePackage{luatex85}
 \usepackage{pdfcomment}
@@ -56,7 +61,7 @@
 % Sections formatting
 %-------------------------------------------
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\Large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Custom commands
@@ -70,7 +75,7 @@
 \newcommand{\resumeEduEntry}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\large #1} & #2 \\
       \textit{#3} & \textit{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
@@ -78,7 +83,7 @@
 \newcommand{\resumeExpEntry}[5]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+      \textbf{\large #1} & #2 \\
       \textit{#3 $\cdot$ #4} & \textit{#5} \\
     \end{tabular*}\vspace{-5pt}
 }

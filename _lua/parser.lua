@@ -48,7 +48,17 @@ function printExpItems(file)
     tex.print("\\begin{small}")  -- Use \begin{footnotesize} if you want a smaller size
     tex.print("\\resumeSubHeadingListStart")
     tex.print("\\resumeExpEntry")
-    tex.print("{" .. value["company"] .. "}")
+    
+    -- Build company name with icons inline
+    local company_name = unescapeFromJson(value["company"])
+    if value["company_website"] and value["company_website"] ~= "" then
+      company_name = company_name .. " \\href{" .. value["company_website"] .. "}{\\scriptsize\\faGlobe}"
+    end
+    if value["company_linkedin"] and value["company_linkedin"] ~= "" then
+      company_name = company_name .. " \\href{" .. value["company_linkedin"] .. "}{\\scriptsize\\faLinkedin}"
+    end
+    
+    tex.print("{" .. company_name .. "}")
     tex.print("{" .. value["company_location"] .. "}")
     tex.print("{" .. value["role"] .. "}")
     tex.print("{" .. value["stack"] .. "}")
@@ -125,8 +135,16 @@ function printProdItems(file)
     tex.print("\\resumeSubHeadingListStart")
     tex.print("\\resumeExpEntry")
     
-    -- Use company (product name)
-    tex.print("{" .. value["company"] .. "}")
+    -- Build company name with icons inline
+    local company_name = unescapeFromJson(value["company"])
+    if value["company_website"] and value["company_website"] ~= "" then
+      company_name = company_name .. " \\href{" .. value["company_website"] .. "}{\\scriptsize\\faGlobe}"
+    end
+    if value["company_linkedin"] and value["company_linkedin"] ~= "" then
+      company_name = company_name .. " \\href{" .. value["company_linkedin"] .. "}{\\scriptsize\\faLinkedin}"
+    end
+    
+    tex.print("{" .. company_name .. "}")
     
     -- Add link as "location" with icon
     local location = ""
@@ -151,15 +169,19 @@ function printProdItems(file)
 
     -- Print details (similar to experience)
     for _, detail in ipairs(value["details"]) do
-      tex.print("\\item{" .. detail["title"] .. " \\hfill \\textit{" .. detail["languages"] .. "}}")
+      -- Unescape title for proper LaTeX rendering
+      local title = unescapeFromJson(detail["title"])
+      local languages = detail["languages"] or ""
+      tex.print("\\item{" .. title .. " \\hfill \\textit{" .. languages .. "}}")
 
       -- Check if "scale" field exists
       if detail["scale"] then
         tex.print("\\newline \\textbf{ Scale:- }  " .. unescapeFromJson(detail["scale"]) .. " \\hfill")
       end
-      -- Check if "effect" field exists
-      if detail["effect"] then
-        tex.print("\\newline \\textbf{ Effect:- }  " .. unescapeFromJson(detail["effect"]) .. " \\hfill")
+      -- Check if "effect" or "Effect" field exists (case-insensitive)
+      local effect = detail["effect"] or detail["Effect"]
+      if effect then
+        tex.print("\\newline \\textbf{ Effect:- }  " .. unescapeFromJson(effect) .. " \\hfill")
       end
 
       -- Print descriptions with sub-bullets
