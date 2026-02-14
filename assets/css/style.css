@@ -97,6 +97,10 @@ ul {
     align-items: center;
     justify-content: center;
     background: rgba(30, 41, 59, 0.5); /* Fallback bg */
+    /* Safari border-radius fix */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    mask-image: radial-gradient(white, black);
+    transform: translateZ(0);
 }
 
 .profile-initials {
@@ -117,9 +121,7 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Zoom in to the face and position higher up */
-    object-position: center 20%; 
-    transform: scale(1.35); 
+    object-position: center center; 
 }
 
 .profile-details {
