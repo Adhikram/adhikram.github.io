@@ -163,7 +163,7 @@
   },
   {
     "id": "langchain",
-    "name": "Langchain",
+    "name": "LangChain",
     "icon": "fa-solid fa-link",
     "url": "https://python.langchain.com/docs/get_started/introduction"
   },

@@ -9,12 +9,12 @@
         {
                 "title": "\\textbf{Job Portal Platform}",
                 "descriptions": [
-                    "Built a job portal platform that is focused on the tech industry to connect the candidates with the best opportunities.",
-                    "Added Automated Job Scraping to the platform to get the latest jobs from the web from Amazon, Google, Atlassian etc.",
-                    "Started as an personal project to understand the job trends live and to get the latest jobs from the web."
+                    "Built a tech-focused job portal that connects candidates with strong opportunities.",
+                    "Added automated job scraping so the platform surfaces fresh roles from employers such as Amazon, Google, and Atlassian.",
+                    "Started as a personal project to track hiring trends in real time and aggregate the latest jobs from the web."
                 ],
                 "languages": "Stack:- Python, Next.js, PostgreSQL",
-                "scale": "Tech Job Portal platform with AI-powered matching and automation"
+                "scale": "Tech job portal with AI-powered matching and automation"
             }
         ]
     },
@@ -22,29 +22,29 @@
         "company": "\\textbf{Equal Collective - Sellers Helper}",
         "company_location": "",
         "role": "Founding Engineer",
-        "time_duration": "January 2024 - January 2026",
+        "time_duration": "January 2024 - December 2025",
         "site": "https://www.linkedin.com/company/equal-collective/",
         "details": [
             {
-                "title": "\\textbf{Lead Reachout Funnel}",
+                "title": "\\textbf{Lead Outreach Funnel}",
                 "descriptions": [
-                    "Lead the Product from Scratch to a point where it is self-sustaining, generating leads and revenue.",
-                    "Developed reachout funnel that leads to more engagement and revenue by using AI powered outreach with Analytics."
+                    "Led the product from scratch to a self-sustaining state that generates leads and revenue.",
+                    "Developed an outreach funnel that increased engagement and revenue using AI-powered outreach with analytics."
                 ],
                 "languages": "Stack:- Smartlead, Metabase",
-                "Effect": "Scaling from \\textbf{0 to 20K+ monthly revenue} with efficient lead reachout"
+                "effect": "Scaled from \\textbf{0 to 20K+ monthly revenue} with efficient lead outreach"
             },{
                 "title": "\\textbf{Sellers Automation}",
                 "descriptions": [
-                    "Introduced the Seller Content classification system to automate the content creation and quality control."
+                    "Introduced a seller content classification system to automate content creation and quality control."
                 ],
-                "Effect": "Serving \\textbf{30K+} Sellers with AI Powered Content Creation and Quality Control"
+                "effect": "Serving \\textbf{30K+} sellers with AI-powered content creation and quality control"
             },{
                 "title": "\\textbf{Amazon Scraping Integration}",
                 "descriptions": [
-                    "Bypass the Scraping Blockers of amazon to get the Reviews , Content and Listings data in scale."
+                    "Bypassed Amazon scraping defenses to ingest reviews, content, and listing data at scale."
                 ],
-                "Effect": "Serving \\textbf{30K+} Products data enhance the reachability of the sellers"
+                "effect": "Serving \\textbf{30K+} products—richer data improved seller reachability"
              }
         ]
     },
@@ -59,9 +59,9 @@
                 "title": "\\textbf{Automated Resume \\& Portfolio System}",
                 "descriptions": [
                     "Built an automated system that generates multiple resume variants and a portfolio website from JSON.",
-                    "Implemented LuaTeX-based PDF generation with custom LaTeX templates for professional resume.",
-                    "Integrated Jekyll static site generator to automatically create and deploy portfolio website from the same data.",
-                    "Eliminated manual resume updates - simply edit JSON files to regenerate all resume variants and website simultaneously."
+                    "Implemented LuaTeX-based PDF generation with custom LaTeX templates for professional resumes.",
+                    "Integrated the Jekyll static site generator to build and deploy the portfolio from the same data.",
+                    "Eliminated manual resume updates—edit JSON once to regenerate all resume variants and the site."
                 ],
                 "languages": "Stack:- LuaTeX, LaTeX, Jekyll, Ruby, Lua, JSON",
                 "scale": "Single source of truth generating \\textbf{4 resume variants + portfolio website}"

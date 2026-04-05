@@ -11,31 +11,31 @@
       {
         "title": "\\textbf{Agentic Wrapper}",
         "descriptions": [
-          "Architeched the Ai layers of the product from scratch to enable the agentic ai to make data driven decisions Leading to ai native approach in the product.",
-          "Introduced \\textbf{RAG layer} over more then \\textbf{20K+} Financial Document to Stream line the agentic hand that empowered the brokers to make data driven decisions."
+          "Architected the AI layers of the product from scratch so agentic AI could make data-driven decisions and support an AI-native product approach.",
+          "Introduced a \\textbf{RAG layer} over more than \\textbf{20,000} financial documents, streamlining the agentic workflow so brokers could make data-driven decisions with grounded retrieval."
         ],
-        "languages": "Stack:- Prompt Engineering, RAG, Agentic toolkits, Gemini, Grok, Langchain",
-        "effect": "Agentic AI makes data driven decisions leads to revenue increase in \\$\\textbf{100K+} dollars",
-        "scale": "\\textbf{100K} Real Estate Companies with segmented AI knowledge base of \\textbf{Millions} of data points."
+        "languages": "Stack:- Prompt Engineering, RAG, Agentic toolkits, Gemini, Grok, LangChain",
+        "effect": "Drove \\$\\textbf{100K+} revenue with agentic RAG automating data-driven broker decisions.",
+        "scale": "Serving \\textbf{100K} real estate companies with a segmented AI knowledge base spanning \\textbf{millions} of data points."
       },
       {
         "title": "\\textbf{Outreach Funnel}",
         "descriptions": [
-          "Invented the reachout funnel that lead the engagement rates to \\textbf{10x} deals a month from quality leads through niched AI powered outreach with filterd Deals.",
-          "Redesined the context engineering approach to the data enrichment pipeline to make it more qualitative to use down funneling the leads to reachout."
+          "Built an outreach funnel that lifted deal flow to roughly \\textbf{10x} per month from quality leads through niche AI-powered outreach and filtered deal targeting.",
+          "Redesigned context engineering for the data enrichment pipeline to improve lead quality before downstream outreach."
         ],
         "languages": "Stack:- SmartLead, Amazon SES, Playwright, Puppeteer",
-        "effect": "Increased engagement rates by \\textbf{10x} moving the Deal approach numbers once a month to double digits.",
-        "scale": "Reachout to \\textbf{10K+} leads a month from a Growing pool of \\textbf{500K+} leads auto added from Real Life Newsletters"
+        "effect": "Increased engagement roughly \\textbf{10x}, moving deal volume from about one per month to double digits.",
+        "scale": "Outreach to \\textbf{10K+} leads per month from a growing pool of \\textbf{500K+} leads auto-ingested from real-world newsletters."
       },
       {
         "title": "\\textbf{Lead Management System}",
-        "descriptions": [          
-          "Added Broker Velocity Engine to gamify Brokers experienece where they do more in less time and get more deals with AI assistance and less repetative tasks."
+        "descriptions": [
+          "Shipped the Broker Velocity Engine to gamify the broker experience—more output in less time, more deals with AI assistance, and fewer repetitive tasks."
         ],
         "languages": "Stack:- Data Modeling, ETL, PostgreSQL, Redis, BullMQ",
-        "effect": "Gamification attacts intelligent brokers leading to more revenue",
-        "scale": "10+ brokers managing 1000+ deals and \\$\\textbf{100K+} in revenue for \\textbf{20K+} properties."
+        "effect": "Gamification attracts strong brokers and supports higher revenue.",
+        "scale": "10+ brokers managing 1,000+ deals and \\$\\textbf{100K+} in revenue across \\textbf{20K+} properties."
       }
     ]
   },
@@ -45,29 +45,28 @@
     "company_website": "https://www.media.net/",
     "company_linkedin": "https://www.linkedin.com/company/media.net/",
     "role": "Data Application Developer 2",
-    "time_duration": "October 2021 - April 2025",
-    "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, Hdfs",
+    "time_duration": "October 2021 - March 2026",
+    "stack": "Stack:- Scala, Java, SQL, Spark, Kafka, PySpark, HDFS",
     "details": [
       {
         "title": "\\textbf{DANTE (Data Anomaly Tracker)}",
         "descriptions": [
-          "Conceptualized our first configurable data quality tools which fortified data integrity and optimized parallel data reading, leading to a \\textbf{60\\%} reduction in data (\\textbf{>100GB}) processing time, .",
+          "Conceptualized our first configurable data quality tools, which fortified data integrity and optimized parallel data reading, leading to a \\textbf{60\\%} reduction in processing time for \\textbf{>100GB} workloads.",
           "EQ Tracer: A tool to \\textbf{monitor summative metric trends} across configurable hierarchies with dynamic alerting mechanisms to filter out noise data, ensuring accurate insights.",
           "Ratio Tracer: A tool for \\textbf{outlier detection} using customizable percentile thresholds, enabling the proactive identification and mitigation of anomalies.",
           "PM Tracer: A logging and monitoring tool that aggregates data from multiple sources, \\textbf{providing detailed coverage and mismatch analysis} for enhanced data quality and system reliability."
-
         ],
         "languages": "Stack:- Scala, Spark, Hive",
-        "scale": "Comparing between nearly \\textbf{3 Billion} and \\textbf{200 Million} Rows in \\textbf{30 minutes}"
+        "scale": "Compared nearly \\textbf{3 billion} and \\textbf{200 million} rows in \\textbf{30 minutes}."
       },
       {
         "title": "\\textbf{StopLoss System}",
         "descriptions": [
-          "Shifted Spark Streaming to Structured Streaming, leading to a \\textbf{50\\%} reduction in latency and improved error handling, which also added exactly-once assurance that terminated the data audit pipeline.",
-          "Implemented \\textbf{A/B testing} to gain insights into traffic patterns and loss thresholds for individual entities. This initiative led to a remarkable \\textbf{15\\%} reduction in overall losses, significantly contributing to the company’s research and development efforts and generating tangible improvements in profitability."
-         ],
+          "Migrated Spark Streaming to Structured Streaming, achieving a \\textbf{50\\%} reduction in latency and stronger error handling with exactly-once semantics that stabilized the data audit pipeline.",
+          "Implemented \\textbf{A/B testing} to understand traffic patterns and loss thresholds per entity, driving a \\textbf{15\\%} reduction in overall losses and supporting R\\&D with measurable profitability gains."
+        ],
         "languages": "Stack:- Java, Structured Streaming, Batch Processing",
-        "scale": "Fetching \\textbf{50k records per second} from Kafka and processing it in \\textbf{5 minute} bucket"
+        "scale": "Ingesting \\textbf{50k records per second} from Kafka and processing in \\textbf{5-minute} buckets."
       }
     ]
   },
@@ -83,10 +82,10 @@
       {
         "title": "\\textbf{Discord Automation and Notification System}",
         "descriptions": [
-            "Pioneered automation for group moderation on Discord through website, unlocking the peer-learning aspect of the product. Resulted in reduced management costs with increased community engagement."
-            ],
+          "Pioneered automation for group moderation on Discord through the web app, unlocking peer learning while reducing moderation overhead and lifting engagement."
+        ],
         "languages": "Stack:- Ruby on Rails, Python, Amazon SQS",
-        "scale": "Sending \\textbf{2k messages per day}. Reaching \\textbf{10k Users} in \\textbf{3 months}"
+        "scale": "Sending \\textbf{2k messages per day}. Reaching \\textbf{10k users} in \\textbf{3 months}."
       }
     ]
   }
