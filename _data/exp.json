@@ -22,9 +22,10 @@
         "title": "\\textbf{Outreach Funnel}",
         "descriptions": [
           "Built an outreach funnel that lifted deal flow to roughly \\textbf{10x} per month from quality leads through niche AI-powered outreach and filtered deal targeting.",
-          "Redesigned context engineering for the data enrichment pipeline to improve lead quality before downstream outreach."
+          "Redesigned context engineering for the data enrichment pipeline to improve lead quality before downstream outreach.",
+          "Shipped automated lead generation scaling from \\textbf{50K to 800K} using Playwright, industry knowledge, Gemini, and RAG."
         ],
-        "languages": "Stack:- SmartLead, Amazon SES, Playwright, Puppeteer",
+        "languages": "Stack:- SmartLead, Amazon SES, Playwright, Puppeteer, Gemini, RAG",
         "effect": "Increased engagement roughly \\textbf{10x}, moving deal volume from about one per month to double digits.",
         "scale": "Outreach to \\textbf{10K+} leads per month from a growing pool of \\textbf{500K+} leads auto-ingested from real-world newsletters."
       },

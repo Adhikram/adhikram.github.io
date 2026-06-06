@@ -37,6 +37,17 @@
 
     <!-- Hero -->
     <section id="hero">
+        <canvas id="hero-graph-canvas" aria-label="Interactive technology cluster graph"></canvas>
+        <script id="hero-graph-data" type="application/json">{{ site.data.hero_graph | jsonify }}</script>
+        <div id="hero-cluster-backdrop" class="hero-cluster-backdrop" hidden></div>
+        <div id="hero-cluster-detail" class="hero-cluster-detail" hidden>
+            <button type="button" class="hero-cluster-back" id="hero-cluster-back">← Back to graph</button>
+            <p class="hero-cluster-kicker" id="hero-cluster-kicker"></p>
+            <h3 class="hero-cluster-title" id="hero-cluster-title"></h3>
+            <p class="hero-cluster-outcome" id="hero-cluster-outcome"></p>
+            <div class="hero-cluster-nodes" id="hero-cluster-nodes"></div>
+            <p class="hero-cluster-body" id="hero-cluster-body"></p>
+        </div>
         <div class="hero-arch"></div>
 
         {% if personalData.image %}
@@ -72,11 +83,15 @@
             </div>
             <div class="metric-item">
                 <span class="metric-value">0 to 10K</span>
-                <span class="metric-label">user Journey</span>
+                <span class="metric-label">user serving</span>
             </div>
             <div class="metric-item">
-                <span class="metric-value">5 yrs</span>
-                <span class="metric-label">Experience</span>
+                <span class="metric-value">10x</span>
+                <span class="metric-label">Outreach Goals</span>
+            </div>
+            <div class="metric-item">
+                <span class="metric-value">$100K+</span>
+                <span class="metric-label">Deal Revenue</span>
             </div>
         </div>
 
@@ -293,6 +308,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="{{ '/assets/js/hero-graph.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/animations.js' | relative_url }}"></script>
 </body>
 </html>

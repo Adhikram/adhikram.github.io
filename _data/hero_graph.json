@@ -1,0 +1,51 @@
+[
+  {
+    "id": "agentic-rag",
+    "title": "Agentic Wrapper",
+    "outcome": "$100K+ Deal Revenue",
+    "nodes": ["RAG", "Prompt Engineering", "Agentic Toolkit", "Gemini", "Grok", "LangChain"],
+    "detail": "Architected AI layers from scratch with a RAG layer over 20,000+ financial documents, driving $100K+ revenue through agentic, data-driven broker decisions."
+  },
+  {
+    "id": "outreach",
+    "title": "Outreach Funnel",
+    "outcome": "10x Outreach Goals",
+    "nodes": ["SmartLead", "Puppeteer", "Amazon SES"],
+    "detail": "Built an AI-powered outreach funnel that lifted deal flow roughly 10x per month through niche targeting and enriched lead context."
+  },
+  {
+    "id": "lead-generation",
+    "title": "Automated Lead Generation",
+    "outcome": "50K → 800K Leads",
+    "nodes": ["Playwright", "Industry Knowledge", "Gemini", "RAG"],
+    "detail": "Scaled automated lead generation from 50K to 800K using Playwright scraping, industry knowledge, Gemini, and RAG-grounded enrichment."
+  },
+  {
+    "id": "broker-engine",
+    "title": "Lead Management System",
+    "outcome": "1K+ Deals",
+    "nodes": ["BullMQ", "Redis", "PostgreSQL", "ETL", "Data Modeling"],
+    "detail": "Shipped the Broker Velocity Engine with gamified workflows—10+ brokers managing 1,000+ deals across 20K+ properties."
+  },
+  {
+    "id": "data-scale",
+    "title": "Data at Scale",
+    "outcome": "0 to 3B+ rows",
+    "nodes": ["Spark", "Kafka", "Scala", "Hive", "Structured Streaming"],
+    "detail": "Built data quality and streaming systems at Media.net—comparing 3 billion rows in 30 minutes and cutting streaming latency 50%."
+  },
+  {
+    "id": "saas-growth",
+    "title": "SaaS Growth",
+    "outcome": "$20k MRR SaaS growth",
+    "nodes": ["SmartLead", "Metabase", "Next.js", "Python"],
+    "detail": "Led Equal Collective from zero to $20K+ monthly revenue with AI-powered outreach, analytics, and seller automation."
+  },
+  {
+    "id": "user-scale",
+    "title": "User Scale",
+    "outcome": "0 to 10K user serving",
+    "nodes": ["Ruby on Rails", "Python", "Amazon SQS", "Redis"],
+    "detail": "Architected the backend for an ed-tech startup that reached 10,000 users in three months with Discord automation at 2K messages/day."
+  }
+]
