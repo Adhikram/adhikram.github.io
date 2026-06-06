@@ -1,0 +1,44 @@
+{% comment %}
+  Condensed highlights for the right sticky card.
+  Shows project titles + effect/scale metrics only — no bullet descriptions.
+  Expects: include.experience (one entry from site.data.exp)
+{% endcomment %}
+
+<div class="card-highlights">
+    {% for detail in include.experience.details %}
+    {% assign effect = detail.effect | default: detail.Effect %}
+    {% assign scale = detail.scale %}
+    {% if effect or scale %}
+    <div class="card-highlight-block">
+        <span class="card-highlight-label">{% include format_tex.html text=detail.title plain=true %}</span>
+
+        {% if effect %}
+        <div class="card-metric card-metric--effect">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <span>{% include format_tex.html text=effect %}</span>
+        </div>
+        {% endif %}
+
+        {% if scale %}
+        <div class="card-metric card-metric--scale">
+            <i class="fa-solid fa-chart-simple"></i>
+            <span>{% include format_tex.html text=scale %}</span>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+    {% endfor %}
+</div>
+
+{% if include.experience.stack %}
+<div class="card-stack-list">
+    {% assign stack_clean = include.experience.stack | replace: '\textbf{', '' | replace: '}', '' | replace: '\%', '' | replace: '\$', '' | replace: '\&', '' %}
+    {% assign stack_items = stack_clean | replace: 'Stack:-', '' | split: ',' %}
+    {% for item in stack_items %}
+    {% assign trimmed = item | strip %}
+    {% if trimmed != '' %}
+    <span class="card-stack-item">{{ trimmed }}</span>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endif %}

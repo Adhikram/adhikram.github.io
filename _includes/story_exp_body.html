@@ -1,0 +1,55 @@
+{% comment %}
+  Shared experience body — used identically on left scroll-item and right card-panel.
+  Expects: include.experience (one entry from site.data.exp)
+{% endcomment %}
+
+{% for detail in include.experience.details %}
+<div class="exp-detail-group">
+    <h4 class="exp-detail-title">{% include format_tex.html text=detail.title %}</h4>
+
+    {% assign effect = detail.effect | default: detail.Effect %}
+    {% assign scale = detail.scale %}
+
+    {% if effect %}
+    <div class="story-highlight story-highlight--effect">
+        <i class="fa-solid fa-arrow-trend-up"></i>
+        {% include format_tex.html text=effect %}
+    </div>
+    {% endif %}
+
+    {% if scale %}
+    <div class="story-highlight story-highlight--scale">
+        <i class="fa-solid fa-chart-simple"></i>
+        {% include format_tex.html text=scale %}
+    </div>
+    {% endif %}
+
+    {% if detail.descriptions %}
+    <ul class="scroll-item-bullets">
+        {% for description in detail.descriptions %}
+        <li>{% include format_tex.html text=description %}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+    {% if detail.languages %}
+    <div class="tag-row detail-tags">
+        {% assign langs = detail.languages | replace: '\textbf{', '' | replace: '}', '' | replace: '\%', '' | replace: '\$', '' | replace: '\&', '' %}
+        {% include render_skills.html input=langs separator=',' %}
+    </div>
+    {% endif %}
+</div>
+{% endfor %}
+
+{% if include.experience.stack %}
+<div class="tag-row company-stack">
+    {% assign stack_clean = include.experience.stack | replace: '\textbf{', '' | replace: '}', '' | replace: '\%', '' | replace: '\$', '' | replace: '\&', '' %}
+    {% assign stack_items = stack_clean | replace: 'Stack:-', '' | split: ',' %}
+    {% for item in stack_items %}
+    {% assign trimmed = item | strip %}
+    {% if trimmed != '' %}
+    <span class="tag">{{ trimmed }}</span>
+    {% endif %}
+    {% endfor %}
+</div>
+{% endif %}

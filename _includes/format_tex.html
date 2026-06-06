@@ -1,0 +1,8 @@
+{% assign raw = include.text | default: '' %}
+{% if include.plain %}
+{% assign raw = raw | replace: '\textbf{', '' | replace: '}', '' %}
+{% else %}
+{% assign raw = raw | replace: '\textbf{', '<strong>' | replace: '}', '</strong>' %}
+{% endif %}
+{% assign raw = raw | replace: '\%', '%' | replace: '\$', '$' | replace: '\&', '&' %}
+{{ raw }}

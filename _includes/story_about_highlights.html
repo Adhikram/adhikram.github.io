@@ -1,0 +1,36 @@
+{% comment %}
+  Condensed about highlights for the right sticky card.
+  Expects: include.summary (from personal.json), include.skills (skills array)
+{% endcomment %}
+
+{% assign summary_html = include.summary | replace: '\textbf{', '<strong>' | replace: '}', '</strong>' | replace: '\%', '%' | replace: '\$', '$' | replace: '\&', '&' %}
+{% assign first_para = summary_html | split: '<br><br>' | first | strip %}
+
+<p class="card-lead">{{ first_para }}</p>
+
+<div class="card-stat-row">
+    <div class="card-stat">
+        <span class="card-stat-val">0 to 3B+</span>
+        <span class="card-stat-lbl">rows</span>
+    </div>
+    <div class="card-stat">
+        <span class="card-stat-val">$20k</span>
+        <span class="card-stat-lbl">MRR SaaS growth</span>
+    </div>
+    <div class="card-stat">
+        <span class="card-stat-val">0 to 10K</span>
+        <span class="card-stat-lbl">user Journey</span>
+    </div>
+    <div class="card-stat">
+        <span class="card-stat-val">$100K+</span>
+        <span class="card-stat-lbl">Revenue Driven</span>
+    </div>
+</div>
+
+{% assign top_skills = include.skills | first %}
+{% if top_skills %}
+<div class="card-stack-list profile-skills">
+    {% assign skill_list = top_skills.details | replace: '\textbf{', '' | replace: '}', '' | replace: '\%', '' | replace: '\$', '' | replace: '\&', '' %}
+    {% include render_skills.html input=skill_list separator=',' %}
+</div>
+{% endif %}

@@ -1,0 +1,15 @@
+{% comment %}
+  About body from personal.json summary — paragraph splits on <br><br>
+{% endcomment %}
+
+{% assign summary_html = include.summary | replace: '\textbf{', '<strong>' | replace: '}', '</strong>' | replace: '\%', '%' | replace: '\$', '$' | replace: '\&', '&' %}
+{% assign summary_parts = summary_html | split: '<br><br>' %}
+
+<div class="about-summary">
+    {% for part in summary_parts %}
+    {% assign trimmed = part | strip %}
+    {% if trimmed != '' %}
+    <p class="scroll-item-desc">{{ trimmed }}</p>
+    {% endif %}
+    {% endfor %}
+</div>
